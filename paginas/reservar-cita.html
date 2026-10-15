@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reservar cita | Clínica Salud Integral</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <header class="menu" id="menu"></header>
+
+  <main>
+    <h1>Reservar cita</h1>
+
+    <section class="tarjeta">
+      <div class="fila">
+        <div class="campo">
+          <label for="medico">Médico</label>
+          <select id="medico">
+            <option>Seleccione médico</option>
+            <option>Dra. Elena Vargas</option>
+            <option>Dr. Pablo Rojas</option>
+            <option>Dr. Luis Salazar</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="fecha">Fecha</label>
+          <input id="fecha" type="date">
+        </div>
+      </div>
+
+      <label>Horario disponible</label>
+      <div class="horarios">
+        <button type="button">08:00</button>
+        <button type="button" class="elegido">08:30</button>
+        <button type="button" class="ocupado" disabled>09:00 (ocupado)</button>
+        <button type="button">09:30</button>
+        <button type="button">10:00</button>
+        <button type="button">10:30</button>
+      </div>
+
+      <div class="grupo-botones">
+        <button type="button" class="principal" data-alerta="Cita reservada. Se envió la confirmación al paciente.">Reservar cita</button>
+        <button type="button" data-alerta="Seleccione un nuevo horario para reprogramar la cita.">Reprogramar</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

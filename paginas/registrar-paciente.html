@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrar paciente | Clínica Salud Integral</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <header class="menu" id="menu"></header>
+
+  <main>
+    <h1>Registrar paciente</h1>
+
+    <form class="tarjeta" data-ok="Paciente guardado correctamente.">
+      <div class="fila">
+        <div class="campo">
+          <label for="dni">DNI</label>
+          <input id="dni" type="text" placeholder="DNI" maxlength="8" required>
+        </div>
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" type="tel" placeholder="Teléfono" required>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="nombres">Nombres</label>
+          <input id="nombres" type="text" placeholder="Nombres" required>
+        </div>
+        <div class="campo">
+          <label for="apellidos">Apellidos</label>
+          <input id="apellidos" type="text" placeholder="Apellidos" required>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="correo">Correo</label>
+          <input id="correo" type="email" placeholder="Correo electrónico">
+        </div>
+      </div>
+
+      <div class="grupo-botones">
+        <button type="submit" class="principal">Guardar</button>
+        <button type="button" data-alerta="Datos del paciente actualizados.">Actualizar</button>
+        <a class="boton" href="inicio.html">Cancelar</a>
+      </div>
+    </form>
+  </main>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

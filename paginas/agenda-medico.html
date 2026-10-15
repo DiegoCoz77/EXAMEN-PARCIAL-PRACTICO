@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agenda del médico | Clínica Salud Integral</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <header class="menu" id="menu"></header>
+
+  <main>
+    <h1>Agenda del médico</h1>
+
+    <div class="filtro">
+      <div class="campo">
+        <label for="fecha">Fecha</label>
+        <input id="fecha" type="date" value="2026-10-15">
+      </div>
+      <button type="button" class="principal">Ver agenda</button>
+    </div>
+
+    <div class="tabla-scroll">
+      <table>
+        <thead>
+          <tr><th>Hora</th><th>Paciente</th><th>Estado</th><th>Acción</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>08:00</td><td>Carlos Ramos Díaz</td><td>Confirmada</td>
+            <td><button class="principal" data-alerta="Carlos Ramos Díaz - DNI 70123456 - Tel. 987654321">Ver datos</button></td>
+          </tr>
+          <tr>
+            <td>08:30</td><td>María Torres Peña</td><td>Confirmada</td>
+            <td><button class="principal" data-alerta="María Torres Peña - DNI 45879632 - Tel. 954123789">Ver datos</button></td>
+          </tr>
+          <tr>
+            <td>09:30</td><td>Ana Quispe León</td><td>Pendiente</td>
+            <td><button class="principal" data-alerta="Ana Quispe León - DNI 71236548 - Tel. 912345678">Ver datos</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestión de usuarios | Clínica Salud Integral</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <header class="menu" id="menu"></header>
+
+  <main>
+    <div class="encabezado">
+      <h1>Gestión de usuarios</h1>
+      <button type="button" class="principal" data-foco="#usuario">Crear usuario</button>
+    </div>
+
+    <div class="tabla-scroll">
+      <table>
+        <thead>
+          <tr><th>Usuario</th><th>Rol</th><th>Estado</th><th>Acciones</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>recepcion1</td><td>Recepcionista</td><td>Activo</td>
+            <td>
+              <button class="principal" data-foco="#usuario">Editar</button>
+              <button data-estado="Inactivo" data-col="2">Desactivar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>evargas</td><td>Médico</td><td>Activo</td>
+            <td>
+              <button class="principal" data-foco="#usuario">Editar</button>
+              <button data-estado="Inactivo" data-col="2">Desactivar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>lsalazar</td><td>Médico</td><td>Inactivo</td>
+            <td><button class="principal" data-foco="#usuario">Editar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <form data-ok="Usuario guardado correctamente.">
+      <div class="fila" style="align-items:flex-end">
+        <div class="campo medio">
+          <label for="usuario">Usuario</label>
+          <input id="usuario" type="text" placeholder="Nombre de usuario" required>
+        </div>
+        <div class="campo chico">
+          <label for="rol">Rol</label>
+          <select id="rol" required>
+            <option value="">Asignar rol</option>
+            <option>Recepcionista</option>
+            <option>Médico</option>
+            <option>Administrador</option>
+          </select>
+        </div>
+        <button type="submit" class="principal">Guardar</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

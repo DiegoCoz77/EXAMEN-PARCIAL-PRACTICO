@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atención de cita | Clínica Salud Integral</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <header class="menu" id="menu"></header>
+
+  <main>
+    <h1>Atención de cita</h1>
+
+    <form class="tarjeta" data-ok="Cita marcada como atendida.">
+      <p class="dato-paciente">Paciente: Carlos Ramos Díaz</p>
+      <p class="dato-suave">Cita: 15/10/2026 - 08:00</p>
+
+      <label for="observaciones">Observaciones</label>
+      <textarea id="observaciones" placeholder="Escriba las observaciones..."></textarea>
+
+      <div class="grupo-botones" style="margin-top:24px">
+        <button type="submit" class="principal">Marcar como atendida</button>
+        <a class="boton" href="agenda-medico.html">Volver a la agenda</a>
+      </div>
+    </form>
+  </main>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>
